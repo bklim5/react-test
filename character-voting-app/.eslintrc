@@ -1,0 +1,19 @@
+{
+  "plugins": ["jasmine"],
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-danger": "off",
+    "max-len": [1, 120, 4, {"ignoreComments": true}]
+  },
+  "env": {
+    "jasmine": true,
+    "jest": true,
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "fetch": true
+  }
+}
