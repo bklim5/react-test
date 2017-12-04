@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 130px;
+}
+
+.App .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: rgb(47, 60, 91);
+  padding: 20px;
+}
+
+.App-title {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+}
+
+.App #analyzeBtn {
+  background-color: rgb(47, 60, 91);
+  color: rgb(255, 255, 255);
+}
+
+.App .errorMessage {
+  color: red;
+}
+
+.App-intro {
+  font-size: large;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.App-footer {
+  background-color: rgb(47, 60, 91);;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 768px) {
+  .App .container {
+    width: 100%;
+  }
+}
